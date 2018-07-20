@@ -39,7 +39,7 @@ for category in categories:
                     print('!!! Could not parse ' + url + 'response: trying again: ' + str(retry))
 
             if len(j['items']) == 0:
-                print('No items found in ' + url)
+                print('No items found in page ' + page)
                 break
 
             for item in j['items']:
